@@ -11064,7 +11064,7 @@ footer.layout-7 .footer-copyright .row {
     display: none;
   }
   .product-listing:not(.carousel-products-mobile) .product .product__inside {
-    text-align: left;
+    text-align: center;
   }
   .product-listing:not(.carousel-products-mobile) .product .product__inside__name h2 {
     padding: 0;
@@ -11094,7 +11094,7 @@ footer.layout-7 .footer-copyright .row {
     height: 20px;
     line-height: 20px;
     padding: 0 0;
-    margin: 0 10px 14px 0;
+    margin: 0 0 14px 0;
     background: transparent !important;
     display: inline-block !important;
     text-align: left;
@@ -11103,10 +11103,11 @@ footer.layout-7 .footer-copyright .row {
     width: 20px;
     padding: 0;
     font-size: 20px;
-    color: {{ settings.color_desc }};
+    color: {{ settings.color_prtitle }};
   }
   .product-listing:not(.carousel-products-mobile) .product .product__inside__info .btn--xl:not(.row-mode-visible):hover .icon {
-    color: {{ settings.color_base }};
+    color: {{ settings.color_btntexthover }};
+    background-color: {{ settings.color_btnbghover }};
   }
   .product-listing:not(.carousel-products-mobile) .product .price-box {
     font-size: 20px;
@@ -18382,6 +18383,19 @@ aside .recent-post-box {
     font-size: 70px;
     margin: 0 0 0 85px;
   }
+}
+@media (max-width: 767px) {
+  .tp-caption1-title {
+    font-size: 88px;
+  }  
+}
+@media (min-width: 1200px) {
+  .tp-caption1-title {
+    font-size: 128px;
+  }
+}
+.tp-caption1-title {
+  font-family: "Alex Brush", cursive;
 }
 /*  NAV SLIDER  */
 .tp-leftarrow.default {
